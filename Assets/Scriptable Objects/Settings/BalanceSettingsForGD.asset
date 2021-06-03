@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef4adca42203c24a887f0e1b2625c1b, type: 3}
+  m_Name: BalanceSettingsForGD
+  m_EditorClassIdentifier: 
+  T: 0
+  U: 0
+  Z: 0
+  N1: 2
+  M1: 5
+  K1: 1
+  L1: 3
+  O1: 10
+  N2: 2
+  M2: 4
+  K2: 2
+  L2: 3
+  O2: 10
+  N3: 0
+  M3: 0
+  K3: 0
+  L3_1: 0
+  L3_2: 0
+  O3: 0
+  playerSpeed: 6
+  playerDamage: 1
+  bulletSpeed: 10
+  reloadTime: 0.5
+  playerHealth: 4
+  salesPeriod: 0
+  bulletsPerSale: 0
+  bulletsInClip: 10
+  losingBulletsOnReload: 0
