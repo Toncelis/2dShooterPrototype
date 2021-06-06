@@ -32,6 +32,8 @@ public class ScoreNBulletManager : MonoBehaviour
     private int saleCost;
 
     private int score;
+    public int Score => score;
+
     private int reloads;
 
     [SerializeField] UnityEngine.UI.Text scoreText;
@@ -114,5 +116,10 @@ public class ScoreNBulletManager : MonoBehaviour
                 BuyClip();
             }
         }
+    }
+
+    public void TurnOff()
+    {
+        this.enabled = false;
     }
 }

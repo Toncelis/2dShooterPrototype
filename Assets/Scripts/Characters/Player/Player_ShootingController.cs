@@ -70,5 +70,10 @@ namespace Shooting
                 }
             }
         }
+
+        public void TurnOff ()
+        {
+            this.enabled = false;
+        }
     }
 }

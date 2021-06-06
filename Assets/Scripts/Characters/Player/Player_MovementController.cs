@@ -44,4 +44,9 @@ public class Player_MovementController : MonoBehaviour
     {
         return (transform.position - transform.up * centerShift);
     }
+
+    public void TurnOff()
+    {
+        this.enabled = false;
+    }
 }

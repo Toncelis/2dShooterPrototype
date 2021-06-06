@@ -74,7 +74,14 @@ public class EnemiesManager : MonoBehaviour
     {
         StartCoroutine(SpawnCoroutine());
     }
+
+    public void TurnOff()
+    {
+        this.enabled = false;
+    }
 }
+
+// по хорошему вставить запоминание всех имеющихся врагов на сцене, чтобы иметь возможность их замораживать при паузе и конце игры 
 
 public class MobWave
 {

@@ -53,7 +53,7 @@ namespace Battle
             body.SetActive(false);
             damageIndicator.SetActive(false);
             deathVisualisation.SetActive(true);
-            //LevelManager.GetInstance().WinLvl();
+            LevelManager.GetInstance().Win();
         }
 
         public void OnParticleSystemStopped()

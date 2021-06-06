@@ -2055,7 +2055,7 @@ MonoBehaviour:
   - {fileID: 91406727}
   mobCreation1: {fileID: 4194852031665526959, guid: abe26001e5bb14048a23cebc86551896, type: 3}
   mobCreation2: {fileID: 2846309361586199786, guid: 173eedcc838771d47a8b84096545936b, type: 3}
-  bossCreation: {fileID: 0}
+  bossCreation: {fileID: 4194852031665526959, guid: 45739149e0bef984291789157003725d, type: 3}
 --- !u!4 &665091222
 Transform:
   m_ObjectHideFlags: 0
@@ -3699,6 +3699,7 @@ GameObject:
   - component: {fileID: 1612957858}
   - component: {fileID: 1612957860}
   - component: {fileID: 1612957861}
+  - component: {fileID: 1612957862}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3935,6 +3936,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1612957862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612957853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdc7aa34cd591845a96ddc4b9ad343e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 8aa59f9db67d306438d070003837f909, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1612957859}
+        m_TargetAssemblyTypeName: Player_MovementController, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1612957860}
+        m_TargetAssemblyTypeName: Shooting.Player_ShootingController, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 176466535}
+        m_TargetAssemblyTypeName: ScoreNBulletManager, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 665091221}
+        m_TargetAssemblyTypeName: EnemiesManager, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1643847596
 GameObject:
   m_ObjectHideFlags: 0
