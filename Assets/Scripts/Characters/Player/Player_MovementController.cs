@@ -37,4 +37,11 @@ public class Player_MovementController : MonoBehaviour
 
         indicator.UpdateVisual();
     }
+
+    // сдвиг трансформа модельки относительно её геометрического центра
+    private float centerShift = 0.25f;
+    public Vector3 GetCenterPoint ()
+    {
+        return (transform.position - transform.up * centerShift);
+    }
 }

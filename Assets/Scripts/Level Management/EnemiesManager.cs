@@ -26,6 +26,7 @@ public class EnemiesManager : MonoBehaviour
 
     [SerializeField] GameObject mobCreation1;
     [SerializeField] GameObject mobCreation2;
+    [SerializeField] GameObject bossCreation;
 
     void Spawn (GameObject obj)
     {
@@ -64,7 +65,7 @@ public class EnemiesManager : MonoBehaviour
 
         yield return new WaitForSeconds(timebreakBetweenWaves);
 
-        //SpawnBoss();
+        Instantiate(bossCreation, Vector3.zero, Quaternion.identity);
 
         yield return null;
     }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef4adca42203c24a887f0e1b2625c1b, type: 3}
   m_Name: BalanceSettingsForGD
   m_EditorClassIdentifier: 
-  T: 10
-  U: 10
-  Z: 10
+  T: 0
+  U: 0
+  Z: 0
   N1: 1
   M1: 5
   K1: 1
@@ -27,12 +27,12 @@ MonoBehaviour:
   L2: 3
   O2: 10
   mob2_ScorePrice: 10
-  N3: 0
-  M3: 0
-  K3: 0
-  L3_1: 0
-  L3_2: 0
-  O3: 0
+  N3: 3
+  M3: 1
+  K3: 1
+  L3_1: 5
+  L3_2: 7
+  O3: 30
   playerSpeed: 6
   playerDamage: 1
   bulletSpeed: 10

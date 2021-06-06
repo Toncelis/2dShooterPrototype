@@ -14,7 +14,6 @@ namespace Battle
 
         private CharacterType myType = CharacterType.Mob;
         private float hp;
-        private float size;
 
         private int scorePrice;
 
@@ -22,8 +21,6 @@ namespace Battle
         {
             hp = settings.MobHealth[(int) mobVariant];
             scorePrice = settings.MobPrice[(int)mobVariant];
-            size = settings.MobSize[(int)mobVariant];
-            body.transform.localScale = Vector3.one * size;
         }
 
         private void Start()
