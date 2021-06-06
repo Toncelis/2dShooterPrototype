@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4194852031665526953, guid: abe26001e5bb14048a23cebc86551896, type: 3}
+      propertyPath: mobPrefab
+      value: 
+      objectReference: {fileID: 7054915715702845941, guid: 6faa2dfffd1b41347b581a4ee8f7ecd8, type: 3}
+    - target: {fileID: 4194852031665526953, guid: abe26001e5bb14048a23cebc86551896, type: 3}
       propertyPath: mobVariant
       value: 1
       objectReference: {fileID: 0}
@@ -57,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194852031665526959, guid: abe26001e5bb14048a23cebc86551896, type: 3}
       propertyPath: m_Name
-      value: MobCreation
+      value: MobCreation(v2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe26001e5bb14048a23cebc86551896, type: 3}

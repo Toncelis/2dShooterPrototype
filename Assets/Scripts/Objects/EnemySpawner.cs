@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float cooldownTime;
+    [SerializeField] int maxSpawns;
+
+    private int availableSpawns;
+    private bool spawnIsOnCooldown;
+
+    private void Start()
     {
-        
+        availableSpawns = maxSpawns;
+        spawnIsOnCooldown = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool CanSpawn ()
     {
-        
+        return (availableSpawns > 0 & !spawnIsOnCooldown);
+    }
+
+    private void ResetSpawn()
+    {
+        spawnIsOnCooldown = false;
+    }
+
+    public void SpawnMob (GameObject mob)
+    {
+        Instantiate(mob, transform.position, Quaternion.identity);
+        availableSpawns--;
+        spawnIsOnCooldown = true;
+        Invoke("ResetSpawn", cooldownTime);
     }
 }

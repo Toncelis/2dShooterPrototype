@@ -44,6 +44,9 @@ namespace Settings
             [Min(1f)]
             [SerializeField] float O1;
 
+            [Min(0)]
+            [SerializeField] int mob1_ScorePrice;
+
         [Space(5)]
 
             [Tooltip("Size of second tier mob")]
@@ -65,6 +68,9 @@ namespace Settings
             [Tooltip("Health of second tier mob")]
             [Min(1f)]
             [SerializeField] float O2;
+
+            [Min(0)]
+            [SerializeField] int mob2_ScorePrice;
 
         [Header("Boss Settings")]
 
@@ -116,36 +122,45 @@ namespace Settings
             [SerializeField] float salesPeriod;
 
             [Min(1)]
-            [SerializeField] int bulletsPerSale;
+            [SerializeField] int reloadsPerSale;
 
             [Min(1)]
             [SerializeField] int bulletsInClip;
 
-            [SerializeField] bool losingBulletsOnReload;
+            [Min(0)]
+            [SerializeField] int reloadsCost;
+
+            [Min(0)]
+            [SerializeField] int reloadsOnStart;
+            //[SerializeField] bool losingBulletsOnReload;
         #endregion
 
         #region Access methods
-        public float Wave1_Mob1_Amount => T;
-        public float Wave2_Mob1_Amount => U;
-        public float Wave2_Mob2_Amount => Z;
+        public int Wave1_Mob1_Amount => T;
+        public int Wave2_Mob1_Amount => U;
+        public int Wave2_Mob2_Amount => Z;
 
         private float Mob1_Size => N1;
         private float Mob1_Speed => M1;
         private float Mob1_Damage => K1;
         private float Mob1_Reach => L1;
         private float Mob1_Health => O1;
+        private int Mob1_ScorePrice => mob1_ScorePrice;
 
         private float Mob2_Size => N2;
         private float Mob2_Speed => M2;
         private float Mob2_Damage => K2;
         private float Mob2_Reach => L2;
         private float Mob2_Health => O2;
+        private int Mob2_ScorePrice => mob2_ScorePrice;
 
         public List<float> MobSize => new List<float> { Mob1_Size, Mob2_Size };
         public List<float> MobSpeed => new List<float> { Mob1_Speed, Mob2_Speed };
         public List<float> MobDamage => new List<float> { Mob1_Damage, Mob2_Damage };
         public List<float> MobReach => new List<float> { Mob1_Reach, Mob2_Reach };
         public List<float> MobHealth => new List<float> { Mob1_Health, Mob2_Health };
+
+        public List<int> MobPrice => new List<int> { Mob1_ScorePrice, Mob2_ScorePrice };
 
         public float Boss_Size => N3;
         public float Boss_Speed => M3;
@@ -161,9 +176,11 @@ namespace Settings
         public float PlayerHealth => playerHealth;
 
         public float SalesPeriod => salesPeriod;
-        public int BulletsPerSale => bulletsPerSale;
+        public int ReloadsPerSale => reloadsPerSale;
         public int BulletsInClip => bulletsInClip;
-        public bool LosingBulletsOnReload => losingBulletsOnReload;
+        public int ReloadsCost => reloadsCost;
+        public int ReloadsOnStart => reloadsOnStart;
+        //public bool LosingBulletsOnReload => losingBulletsOnReload;
         #endregion
     }
 }

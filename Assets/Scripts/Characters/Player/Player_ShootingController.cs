@@ -54,9 +54,12 @@ namespace Shooting
             }
             if (Input.GetButtonDown("Reload"))
             {
-                timeTillShotIsPossible = reloadTime;
-                indicator.ReloadAnimation();
-                bulletsLeft = bulletsInClip;
+                if (ScoreNBulletManager.GetInstance().Reload())
+                {
+                    timeTillShotIsPossible = reloadTime;
+                    indicator.ReloadAnimation();
+                    bulletsLeft = bulletsInClip;
+                }
             }
             else if (Input.GetButton("Fire1"))
             {

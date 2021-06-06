@@ -12,19 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef4adca42203c24a887f0e1b2625c1b, type: 3}
   m_Name: BalanceSettingsForGD
   m_EditorClassIdentifier: 
-  T: 0
-  U: 0
-  Z: 0
-  N1: 2
+  T: 10
+  U: 10
+  Z: 10
+  N1: 1
   M1: 5
   K1: 1
-  L1: 3
+  L1: 2
   O1: 10
+  mob1_ScorePrice: 5
   N2: 2
   M2: 4
   K2: 2
   L2: 3
   O2: 10
+  mob2_ScorePrice: 10
   N3: 0
   M3: 0
   K3: 0
@@ -36,7 +38,8 @@ MonoBehaviour:
   bulletSpeed: 10
   reloadTime: 0.5
   playerHealth: 4
-  salesPeriod: 0
-  bulletsPerSale: 0
+  salesPeriod: 10
+  reloadsPerSale: 6
   bulletsInClip: 10
-  losingBulletsOnReload: 0
+  reloadsCost: 20
+  reloadsOnStart: 10

@@ -14,10 +14,16 @@ namespace Battle
 
         private CharacterType myType = CharacterType.Mob;
         private float hp;
-        
+        private float size;
+
+        private int scorePrice;
+
         void Setup ()
         {
             hp = settings.MobHealth[(int) mobVariant];
+            scorePrice = settings.MobPrice[(int)mobVariant];
+            size = settings.MobSize[(int)mobVariant];
+            body.transform.localScale = Vector3.one * size;
         }
 
         private void Start()
@@ -55,6 +61,7 @@ namespace Battle
             body.SetActive(false);
             damageIndicator.SetActive(false);
             deathVisualisation.SetActive(true);
+            ScoreNBulletManager.GetInstance().RaiseScore(scorePrice);
         }
 
         public void OnParticleSystemStopped()

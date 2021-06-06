@@ -5,7 +5,7 @@ using UnityEngine;
 public class MobCreation : MonoBehaviour
 {
     [SerializeField] Transform body;
-    [SerializeField]Settings.SO_Settings_Balance settings;
+    [SerializeField] Settings.SO_Settings_Balance settings;
     [SerializeField] MobType mobVariant;
     [SerializeField] GameObject mobPrefab;
 
